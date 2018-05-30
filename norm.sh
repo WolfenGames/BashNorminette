@@ -5,13 +5,13 @@ head=./
 
 for file in $src*c
 do
-	echo copying and normining $file
+	echo "copying and normining $file " | tr -d '\n'
 	norminette $file
 	wait
 done
 for file in $head*.h
 do
-	echo copying and norming $file
+	echo "copying and norming $file " | tr -d '\n'
 	norminette $file
 	wait
 done
