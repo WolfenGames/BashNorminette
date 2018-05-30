@@ -3,6 +3,8 @@ echo Hello user, please allow me to access your Libft so I can consume and copy 
 dir=./
 head=./
 
+SECONDS=0
+
 for file in $src*c
 do
 	echo "copying and normining $file " | tr -d '\n'
@@ -15,3 +17,5 @@ do
 	norminette $file
 	wait
 done
+DUR=$SECONDS
+echo "TIMELAPSE::: $(($DUR/60)) mins and $(($DUR%60)) seconds"
