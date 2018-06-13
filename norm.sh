@@ -1,75 +1,75 @@
 echo Hello user, please allow me to access your Libft so I can consume and copy all the files to my private... I mean Norme your files...
 
-src=./
-head=./
+src=./srcs/
+head=./includes/
 
 SECONDS=0
 
 #for file in $src*c
 #do
-#	echo "copying and normining $file " | tr -d '\n'
+#	echo "copying and normining $file "
 #	norminette $file
 #	wait
 #done
 #for file in $head*.h
 #do
-#	echo "copying and norming $file " | tr -d '\n'
+#	echo "copying and norming $file "
 #	norminette $file
 #	wait
 #done
 
-norminette ft_a*.c
+norminette $src/ft_a*.c | sed -e 's/^Warning: Not a valid file*//'
 wait
-norminette ft_b*.c
+norminette $src/ft_b*.c | sed -e 's/^Warning: Not a valid file*//'
 wait
-norminette ft_c*.c
+norminette $src/ft_c*.c | sed -e 's/^Warning: Not a valid file*//'
 wait
-norminette ft_d*.c
+norminette $src/ft_d*.c | sed -e 's/^Warning: Not a valid file*//'
 wait
-norminette ft_e*.c
+norminette $src/ft_e*.c | sed -e 's/^Warning: Not a valid file*//'
 wait
-norminette ft_f*.c
+norminette $src/ft_f*.c | sed -e 's/^Warning: Not a valid file*//'
 wait
-norminette ft_g*.c
+norminette $src/ft_g*.c | sed -e 's/^Warning: Not a valid file*//'
 wait
-norminette ft_h*.c
+norminette $src/ft_h*.c | sed -e 's/^Warning: Not a valid file*//'
 wait
-norminette ft_i*.c
+norminette $src/ft_i*.c | sed -e 's/^Warning: Not a valid file*//'
 wait
-norminette ft_j*.c
+norminette $src/ft_j*.c | sed -e 's/^Warning: Not a valid file*//'
 wait
-norminette ft_k*.c
+norminette $src/ft_k*.c | sed -e 's/^Warning: Not a valid file*//'
 wait
-norminette ft_l*.c
+norminette $src/ft_l*.c | sed -e 's/^Warning: Not a valid file*//'
 wait
-norminette ft_m*.c
+norminette $src/ft_m*.c | sed -e 's/^Warning: Not a valid file*//'
 wait
-norminette ft_n*.c
+norminette $src/ft_n*.c | sed -e 's/^Warning: Not a valid file*//'
 wait
-norminette ft_o*.c
+norminette $src/ft_o*.c | sed -e 's/^Warning: Not a valid file*//'
 wait
-norminette ft_p*.c
+norminette $src/ft_p*.c | sed -e 's/^Warning: Not a valid file*//'
 wait
-norminette ft_q*.c
+norminette $src/ft_q*.c | sed -e 's/^Warning: Not a valid file*//'
 wait
-norminette ft_r*.c
+norminette $src/ft_r*.c | sed -e 's/^Warning: Not a valid file*//'
 wait
-norminette ft_s*.c
+norminette $src/ft_s*.c | sed -e 's/^Warning: Not a valid file*//'
 wait
-norminette ft_t*.c
+norminette $src/ft_t*.c | sed -e 's/^Warning: Not a valid file*//'
 wait
-norminette ft_u*.c
+norminette $src/ft_u*.c | sed -e 's/^Warning: Not a valid file*//'
 wait
-norminette ft_v*.c
+norminette $src/ft_v*.c | sed -e 's/^Warning: Not a valid file*//'
 wait
-norminette ft_w*.c
+norminette $src/ft_w*.c | sed -e 's/^Warning: Not a valid file*//'
 wait
-norminette ft_x*.c
+norminette $src/ft_x*.c | sed -e 's/^Warning: Not a valid file*//'
 wait
-norminette ft_y*.c
+norminette $src/ft_y*.c | sed -e 's/^Warning: Not a valid file*//'
 wait
-norminette ft_z*.c
+norminette $src/ft_z*.c | sed -e 's/^Warning: Not a valid file*//'
 wait
-norminette *.h
+norminette $head/*.h | sed -e 's/^Warning: Not a valid file*//'
 DUR=$SECONDS
 echo "TIMELAPSE::: $(($DUR/60)) mins and $(($DUR%60)) seconds"
