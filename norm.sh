@@ -1,7 +1,7 @@
 echo Hello user, please allow me to access your Libft so I can consume and copy all the files to my private... I mean Norme your files...
 
-src=./srcs/
-head=./includes/
+src=../../WTC_/jwolf2/
+head=../../WTC_jwolf2/
 
 SECONDS=0
 
